@@ -1,13 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.2</version>
         <relativePath/>
     </parent>
+
     <groupId>com.example</groupId>
     <artifactId>twitter-app</artifactId>
     <version>0.0.3-SNAPSHOT</version>
@@ -64,6 +68,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
+            <!-- JaCoCo Plugin for code coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -89,11 +94,11 @@
     <distributionManagement>
         <repository>
             <id>maven-releases</id>
-            <url>http://18.212.64.5:8081/repository/maven-releases/</url>
+            <url>http://18.208.183.111:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://18.212.64.5:8081/repository/maven-snapshots/</url>
+            <url>http://18.208.183.111:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
